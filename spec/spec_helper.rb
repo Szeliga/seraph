@@ -10,6 +10,10 @@ RSpec.configure do |config|
     mocks.verify_partial_doubles = true
   end
 
+  config.before(:each) do
+    Seraph.configuration.reset
+  end
+
   config.order = :random
   Kernel.srand config.seed
 end

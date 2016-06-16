@@ -5,5 +5,9 @@ module Seraph
     include ::Singleton
 
     attr_accessor :pepper
+
+    def reset
+      self.pepper = nil
+    end
   end
 end
