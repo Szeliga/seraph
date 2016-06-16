@@ -37,6 +37,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rake', '~> 10.0'
   gem.add_development_dependency 'rspec', '~> 3.0'
   gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
-  gem.add_development_dependency 'fuubar'
-  gem.add_development_dependency 'pry'
+  gem.add_development_dependency 'fuubar', '~> 2.0'
+  gem.add_development_dependency 'pry', '~> 0.10'
 end
