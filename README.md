@@ -60,9 +60,9 @@ Seraph::PasswordEncryptor.call('foobar12')
 
 As a result you get the encrypted password, which you can be persisted in the database, alongside other user data (e-mail, login, etc.)
 
-### WIP - Comparing a provided password with the encrypted one
+### Comparing a provided password with the encrypted one
 
-Comparison is done using a constant-time secure comparison method, from the gem (fast_secure_compare)[https://github.com/daxtens/fast_secure_compare]
+Comparison is done using a constant-time secure comparison method from the gem (fast_secure_compare)[https://github.com/daxtens/fast_secure_compare]
 
 To do it simply run:
 
@@ -70,6 +70,8 @@ To do it simply run:
 Seraph::Authenticator.call(encrypted_password, plaintext_password)
 # => true or false
 ```
+
+If the pepper was set in the configuration block, it will be automatically used in the comparison.
 
 ## Copyright
 
