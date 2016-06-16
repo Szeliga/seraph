@@ -2,6 +2,8 @@ require 'rspec'
 require 'seraph/version'
 require 'codeclimate-test-reporter'
 
+Dir['./spec/support/**/*.rb'].sort.each { |f| require f }
+
 CodeClimate::TestReporter.start
 
 RSpec.configure do |config|
