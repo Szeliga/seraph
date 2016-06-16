@@ -62,7 +62,7 @@ As a result you get the encrypted password, which you can be persisted in the da
 
 ### Comparing a provided password with the encrypted one
 
-Comparison is done using a constant-time secure comparison method from the gem (fast_secure_compare)[https://github.com/daxtens/fast_secure_compare]
+Comparison is done using a constant-time secure comparison method from the gem [fast_secure_compare](https://github.com/daxtens/fast_secure_compare)
 
 To do it simply run:
 
