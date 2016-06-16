@@ -1,5 +1,5 @@
 require 'rspec'
-require 'serafin/version'
+require 'seraph/version'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|

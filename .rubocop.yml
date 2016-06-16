@@ -3,7 +3,7 @@ AllCops:
     - 'script/**/*'
     - 'Guardfile'
     - 'Rakefile'
-    - 'serafin.gemspec'
+    - 'seraph.gemspec'
 Documentation:
   Enabled: false
 Metrics/ClassLength:
