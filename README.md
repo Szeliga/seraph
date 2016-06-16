@@ -1,13 +1,12 @@
 # seraph
-[![Build Status](https://secure.travis-ci.org//seraph.svg?branch=master)](https://travis-ci.org//seraph)
+[![Build Status](https://travis-ci.org/Szeliga/seraph.svg?branch=master)](https://travis-ci.org/Szeliga/seraph)
 
-* [Homepage](https://rubygems.org/gems/seraph)
-* [Documentation](http://rubydoc.info/gems/seraph/frames)
-* [Email](mailto:szymon.szeliga at netguru.co)
+A simple framework-agnostic library for authentication. seraph provides an API for implementing User authentication inside your app. It doesn't make any assumptions about your setup, so you do not have to have a `User` class that inherits from `ActiveRecord::Base`.
+
 
 ## Installation
 
-Type
+Enter in your terminal
 ```
 gem install seraph
 ```
@@ -15,11 +14,7 @@ or put
 ```
 gem 'seraph'
 ```
-inside your Gemfile
-
-## Description
-
-A simple framework-agnostic library for authentication. seraph provides an API for implementing User authentication inside your app. It doesn't make any assumptions about your setup, so you do not have to have a `User` class that inherits from `ActiveRecord::Base`.
+inside your `Gemfile`
 
 ### What do you get?
 
