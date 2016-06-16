@@ -38,4 +38,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
   gem.add_development_dependency 'fuubar', '~> 2.0'
   gem.add_development_dependency 'pry', '~> 0.10'
+  gem.add_development_dependency 'codeclimate-test-reporter', '~> 0.1'
 end
