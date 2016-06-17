@@ -2,7 +2,7 @@ require 'bcrypt'
 require 'seraph/utils'
 
 module Seraph
-  class Authenticator
+  class PasswordComparator
     private_class_method :new
 
     def self.call(encrypted, plaintext)

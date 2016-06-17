@@ -1,8 +1,8 @@
 require 'spec_helper'
-require 'seraph/authenticator'
+require 'seraph/password_comparator'
 require 'seraph/password_encryptor'
 
-RSpec.describe Seraph::Authenticator do
+RSpec.describe Seraph::PasswordComparator do
   describe '.call' do
     let(:plaintext) { 'foobar12' }
     let(:encrypted) { Seraph::PasswordEncryptor.call(plaintext).to_s }

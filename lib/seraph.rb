@@ -1,6 +1,7 @@
 require 'seraph/version'
-require 'seraph/password_encryptor'
 require 'seraph/configuration'
+require 'seraph/password_encryptor'
+require 'seraph/password_comparator'
 
 module Seraph
   def configure

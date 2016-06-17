@@ -1,4 +1,4 @@
-# seraph
+# Seraph
 [![Build Status](https://travis-ci.org/Szeliga/seraph.svg?branch=master)](https://travis-ci.org/Szeliga/seraph)
 [![Code Climate](https://codeclimate.com/github/Szeliga/seraph/badges/gpa.svg)](https://codeclimate.com/github/Szeliga/seraph)
 [![Test Coverage](https://codeclimate.com/github/Szeliga/seraph/badges/coverage.svg)](https://codeclimate.com/github/Szeliga/seraph/coverage)
@@ -67,7 +67,7 @@ Comparison is done using a constant-time secure comparison method from the gem [
 To do it simply run:
 
 ``` ruby
-Seraph::Authenticator.call(encrypted_password, plaintext_password)
+Seraph::PasswordComparator.call(encrypted_password, plaintext_password)
 # => true or false
 ```
 
