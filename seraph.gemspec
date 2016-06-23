@@ -32,7 +32,6 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'bcrypt', '~> 3.1'
   gem.add_dependency 'fast_secure_compare', '~> 1.0'
-  gem.add_dependency 'fast_blank', '~> 1.0'
   gem.add_development_dependency 'rake', '~> 11.2'
   gem.add_development_dependency 'rspec', '~> 3.0'
   gem.add_development_dependency 'rubygems-tasks', '~> 0.2'

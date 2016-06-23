@@ -1,5 +1,4 @@
 require 'bcrypt'
-require 'fast_blank'
 
 module Seraph
   class PasswordEncryptor
@@ -10,8 +9,8 @@ module Seraph
     end
 
     def call
-      return false if String(password).blank?
-      peppered_password = pepper.blank? ? password : "#{password}:#{pepper}"
+      return false if String(password) == ''
+      peppered_password = String(pepper) == '' ? password : "#{password}:#{pepper}"
       BCrypt::Password.create(peppered_password)
     end
 

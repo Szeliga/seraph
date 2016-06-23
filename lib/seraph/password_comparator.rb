@@ -11,7 +11,7 @@ module Seraph
 
     def call
       bcrypt = BCrypt::Password.new(encrypted)
-      peppered_password = pepper.blank? ? plaintext : "#{plaintext}:#{pepper}"
+      peppered_password = String(pepper) == '' ? plaintext : "#{plaintext}:#{pepper}"
       password = BCrypt::Engine.hash_secret(peppered_password, bcrypt.salt)
       Utils.compare(encrypted, password)
     end
