@@ -30,8 +30,8 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ['lib']
 
-  gem.add_dependency 'bcrypt', '~> 3.1'
-  gem.add_dependency 'fast_secure_compare', '~> 1.0'
+  gem.add_runtime_dependency 'bcrypt', '>= 3.1'
+  gem.add_runtime_dependency 'fast_secure_compare', '>= 1.0.0'
   gem.add_development_dependency 'rake', '~> 11.2'
   gem.add_development_dependency 'rspec', '~> 3.0'
   gem.add_development_dependency 'rubygems-tasks', '~> 0.2'
